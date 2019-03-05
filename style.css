@@ -273,3 +273,157 @@ footer img:hover{
       color: rgb(50, 75, 185);
     }
   }
+
+  @media screen and (max-width: 1000px) {
+    
+    .cadreplanete{
+        height: 100%;
+    }
+    
+    .cadreplanete h1{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 12vw;
+        letter-spacing: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .icones{
+        margin-right: 0px;
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        align-content: center;
+    }
+    
+    .icones div{
+        width: 70%;
+        text-align: left;
+        display: flex;
+        flex-direction: center;
+        align-items: center;
+        align-content: center;  
+    }   
+    
+    .icones p{
+        opacity: 1;
+        text-align: left;
+        width: 50%;
+        margin: 0px;
+        font-size: 30px;
+    }
+
+    .icones i{
+        color: white;
+        text-align: center;
+        font-size: 140px;
+        width: 50%;
+    }
+
+    #fleche{
+        width: 100%;
+        display: none;
+    }
+
+    header{
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        background: black;
+    }
+    
+    header p{
+        font-size: 6vw;
+        transform: scale(1.5);
+        margin-left: 60px;
+        margin-right: 50px;
+        font-family: 'Orbitron', sans-serif;
+    }    
+
+    header img{
+        max-width: 20%;
+        height: auto;
+    }
+
+    h1{
+        font-size: 6vw;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    
+    .cadreplanete{
+        height: 100%;
+    }
+    
+    .cadreplanete h1{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 12vw;
+        letter-spacing: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .icones{
+        margin-right: 0px;
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        align-content: center;
+    }
+    
+    .icones div{
+        width: 70%;
+        text-align: left;
+        display: flex;
+        flex-direction: center;
+        align-items: center;
+        align-content: center;  
+    }   
+    
+    .icones p{
+        opacity: 1;
+        text-align: left;
+        width: 50%;
+        margin: 0px;
+        font-size: 30px;
+    }
+
+    .icones i{
+        color: white;
+        text-align: center;
+        font-size: 140px;
+        width: 50%;
+    }
+
+    #fleche{
+        width: 100%;
+        display: none;
+    }
+
+    header{
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        background: black;
+    }
+    
+    header p{
+        font-size: 6vw;
+        transform: scale(1.5);
+        margin-left: 60px;
+        margin-right: 50px;
+        font-family: 'Orbitron', sans-serif;
+    }    
+
+    header img{
+        max-width: 20%;
+        height: auto;
+    }
+
+    h1{
+        font-size: 6vw;
+    }
+  }
