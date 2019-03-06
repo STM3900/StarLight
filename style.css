@@ -275,6 +275,10 @@ footer img:hover{
   }
 
   @media screen and (max-width: 1000px) {
+
+    p{
+        margin-bottom: 10%;
+    }
     
     .cadreplanete{
         height: 100%;
@@ -325,6 +329,10 @@ footer img:hover{
     #fleche{
         width: 100%;
         display: none;
+    }
+
+    .ficheplanete{
+        max-width: 50%;
     }
 
     header{
@@ -351,10 +359,10 @@ footer img:hover{
     }
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 800px) {
     
     .cadreplanete{
-        height: 100%;
+        height: 75vh;
     }
     
     .cadreplanete h1{
@@ -389,19 +397,23 @@ footer img:hover{
         text-align: left;
         width: 50%;
         margin: 0px;
-        font-size: 30px;
+        font-size: 4vw;
     }
 
     .icones i{
         color: white;
         text-align: center;
-        font-size: 140px;
+        font-size: 17vw;
         width: 50%;
     }
 
     #fleche{
         width: 100%;
         display: none;
+    }
+
+    .ficheplanete{
+        max-width: 60%;
     }
 
     header{
@@ -419,11 +431,28 @@ footer img:hover{
     }    
 
     header img{
-        max-width: 20%;
+        max-width: 15%;
         height: auto;
     }
 
     h1{
         font-size: 6vw;
+    }
+
+    footer img{
+        max-width: 50%;
+        height: auto;
+    }
+
+    footer p{
+        font-size: 2vw;
+    }
+
+    footer a{
+        text-align: center;
+    }
+
+    .texteplanete{
+        text-align: center;
     }
   }
