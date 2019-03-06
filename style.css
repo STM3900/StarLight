@@ -367,7 +367,7 @@ footer img:hover{
   @media screen and (max-width: 800px) {
     
     .cadreplanete{
-        height: 75vh;
+        height: 100%;
     }
     
     .cadreplanete h1{

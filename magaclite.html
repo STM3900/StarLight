@@ -15,7 +15,7 @@
       rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header id="top">
         <div>
             <img src="StarLightLogo.png" alt="" height="120px"> 
             <p>StarLight </p>
@@ -30,7 +30,7 @@
                 <p>N'a pas accès à la Magie</p>
             </div>
             <div>
-               <i class="material-icons" id="fleche" onClick="location.href='#fiche'">keyboard_arrow_down</i>
+               <a id="ficheDescription"><i class="material-icons" id="fleche">keyboard_arrow_down</i></a> 
             </div>
             <div>
                 <i class="material-icons">brightness_5</i>
@@ -70,8 +70,27 @@
         </p>
         <footer>
                 <p>Site fait avec ❤ par <a href="https://cc-c-t-o.000webhostapp.com">Théo</a><br>Idée par Théo, Onyx, Santeripe, Daku et Close</p>
-                <a href=""><img src="StarLightLogo.png" alt="" height="120px" title="Retourner en haut de la page"> </a> 
+                <a id="retourEnHaut"><img src="StarLightLogo.png" alt="" height="120px" title="Retourner en haut de la page"> </a> 
                 <p>© 2019 tous droits réservés.</p>
         </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function (){
+                $("#retourEnHaut").click(function (){
+                    $('html, body').animate({
+                        scrollTop: $("#top").offset().top
+                    }, 2000);
+                });
+            });
+
+            $(document).ready(function (){
+                $("#ficheDescription").click(function (){
+                    $('html, body').animate({
+                        scrollTop: $("#fiche").offset().top
+                    }, 2000);
+                });
+            });
+        </script>
 </body>
 </html>
