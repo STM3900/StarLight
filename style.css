@@ -14,6 +14,10 @@ h1{
     text-align: center
 }
 
+#titre{
+    margin-bottom: 4%;
+}
+
 section{
     text-align: center;
     margin-top: 15vh;
@@ -296,6 +300,10 @@ footer img:hover{
 
   @media screen and (max-width: 1000px) {
 
+    #titre{
+        margin-bottom: 5%;
+    }
+
     #myVideo{
         display: none;
     }
@@ -389,6 +397,10 @@ footer img:hover{
   }
 
   @media screen and (max-width: 800px) {
+
+    #titre{
+        margin-bottom: 7%;
+    }
     
     .cadreplanete{
         height: 110%;
