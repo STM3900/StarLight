@@ -13,13 +13,44 @@
     <link rel="shortcut icon" href="StarLightLogo.png" type="image/x-icon">
 </head>
 <body>
-    <header>
+    <header id="top">
         <div>
             <img src="StarLightLogo.png" alt="" height="120px" onclick="location.href='index.html'"> 
             <p onclick="location.href='index.html'">StarLight </p>
         </div>
     </header>
-    <h1>Menu moche</h1>
-    <p><a href="planetes.html">Planètes</a></p>
+    <section id="menu">
+        <article id="menuelement1" onclick="location.href='planetes.html'">
+            <h1>Planètes</h1>
+            <p>Entrez au cœur du système.</p>
+        </article>
+        <article id="menuelement2">
+            <h1>Personnages</h1>
+            <p>Acteurs du monde.</p>
+        </article>
+        <article id="menuelement3">
+            <h1>Tech & Magie</h1>
+            <p>Pouesses galactiques.</p>
+        </article>
+        <article id="menuelement4">
+            <h1>Karma</h1>
+            <p>Gardiens de l'équilibre.</p>
+        </article>
+    </section>
+    <footer>
+        <p>Site fait avec ❤ par <a href="https://cc-c-t-o.000webhostapp.com">Théo</a><br>Idée par Théo, Onyx, Santeripe, Daku et Close</p>
+        <a id="retourEnHaut"><img src="StarLightLogo.png" alt="" height="120px" title="Retourner en haut de la page"> </a> 
+        <p>© 2019 tous droits réservés.</p>
+    </footer>
 </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+            <script>
+                $(document).ready(function (){
+                    $("#retourEnHaut").click(function (){
+                        $('html, body').animate({
+                            scrollTop: $("#top").offset().top
+                        }, 500);
+                    });
+                });
+            </script>
 </html>

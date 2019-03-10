@@ -40,6 +40,7 @@ header{
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     background: black;
+    z-index: 999;
 }
 
 header p{
@@ -90,6 +91,88 @@ header div{
     color: black;
     transition: border 0.3s, color 0.3s, background-color 0.3s;
 }
+
+/* ///////MENU/////// */
+
+#menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    margin-top: 0px;
+}
+
+#menu article{
+    width: 50%;
+    height: 41vh;
+}
+
+#menu h1{
+    margin-bottom: 6%;
+}
+
+#menuelement1{
+    background-image: url("images/menu/magaclite_illu.jpg");
+    background-size: 100vw 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(4px);
+    transition: filter 0.2s;
+}
+
+#menuelement2{
+    background-image: url("images/menu/Onyx.jpg");
+    background-size: 100vw 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(4px);
+    transition: filter 0.2s;
+}
+
+#menuelement3{
+    background-image: url("images/menu/blueprint.jpg");
+    background-size: 100vw 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(4px);
+    transition: filter 0.2s;
+}
+
+#menuelement4{
+    background-image: url("images/menu/galaxy.jpg");
+    background-size: 100vw 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(4px);
+    transition: filter 0.2s;
+}   
+
+#menuelement1:hover{
+    filter: blur(0px);
+    transition: filter 0.3s;
+    cursor: pointer;
+}
+
+#menuelement2:hover{
+    filter: blur(0px);
+    transition: filter 0.3s;
+    cursor: pointer;
+}
+
+#menuelement3:hover{
+    filter: blur(0px);
+    transition: filter 0.3s;
+    cursor: pointer;
+}
+
+#menuelement4:hover{
+    filter: blur(0px);
+    transition: filter 0.3s;
+    cursor: pointer;
+}
+
+
 
 /* ////////////////// */
   
@@ -315,6 +398,35 @@ footer img:hover{
     p{
         margin-bottom: 10%;
     }
+
+    #menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        margin-top: 0px;
+    }
+    
+    #menu article{
+        width: 100%;
+        height: 41vh;
+    }
+
+    #menuelement1{
+        filter: blur(0px);
+    }
+    
+    #menuelement2{
+        filter: blur(0px);
+    }
+    
+    #menuelement3{
+        filter: blur(0px);
+    }
+    
+    #menuelement4{
+        filter: blur(0px);
+    } 
     
     .cadreplanete{
         height: 100%;
@@ -404,6 +516,14 @@ footer img:hover{
 
     #titre{
         margin-bottom: 7%;
+    }
+
+    #menu article{
+        height: 30vh;
+    }
+
+    #menu h1{
+        margin-bottom: 10%;
     }
     
     .cadreplanete{
