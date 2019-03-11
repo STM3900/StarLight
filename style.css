@@ -176,8 +176,70 @@ header div{
     cursor: pointer;
 }
 
+/* /////////MENU PLANETES///////// */
 
+#planeteliste{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    margin-top: 0px;
+}
 
+#planeteliste article{
+    width: 16.66%;
+    background-size: 100vw 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 82vh;
+    transition: width 0.5s;
+}
+
+#planeteliste article:active{
+    transform: scale(0.98);
+}
+
+#planeteliste article:hover{
+    width: 100%;
+    transition: width 0.5s;
+    order: -1;
+}
+
+#planeteliste h1{
+    margin-bottom: 6%;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+#planeteliste article:hover h1{
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+#planeteListeMagaclite{
+    background-image: url("images/planetesIllu/Magaclite.jpg");
+}
+
+#planeteListeTelesto{
+    background-image: url("images/planetesIllu/Telesto.jpg");
+}
+
+#planeteListeSutur{
+    background-image: url("images/planetesIllu/Sutur.jpg");
+}
+
+#planeteListeNaiade{
+    background-image: url("images/planetesIllu/Naiade.jpg");
+}
+
+#planeteListeHiemus{
+    background-image: url("images/planetesIllu/Hiemus.jpg");
+}
+
+#planeteListeEsprah{
+    background-image: url("images/planetesIllu/Esprah.jpg");
+}
 
 
 /* ////////////////// */
