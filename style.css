@@ -391,6 +391,19 @@ footer img:hover{
     }
   }
 
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+  
+::-webkit-scrollbar-thumb {
+    background: #ebebeb;
+    border-radius: 10px;
+  }
+
   @media screen and (max-width: 1000px) {
 
     #titre{
