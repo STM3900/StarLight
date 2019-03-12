@@ -121,7 +121,7 @@ header div{
     background-size: 100vw 100vh;
     background-position: center;
     background-repeat: no-repeat;
-    filter: blur(4px);
+    filter: blur(3px);
     transition: filter 0.2s;
 }
 
@@ -130,7 +130,7 @@ header div{
     background-size: 100vw 100vh;
     background-position: center;
     background-repeat: no-repeat;
-    filter: blur(4px);
+    filter: blur(3px);
     transition: filter 0.2s;
 }
 
@@ -139,7 +139,7 @@ header div{
     background-size: 100vw 100vh;
     background-position: center;
     background-repeat: no-repeat;
-    filter: blur(4px);
+    filter: blur(3px);
     transition: filter 0.2s;
 }
 
@@ -148,7 +148,7 @@ header div{
     background-size: 100vw 100vh;
     background-position: center;
     background-repeat: no-repeat;
-    filter: blur(4px);
+    filter: blur(3px);
     transition: filter 0.2s;
 }   
 
@@ -178,44 +178,61 @@ header div{
 
 /* /////////MENU PLANETES///////// */
 
-#planeteliste{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
-    margin-top: 0px;
+#planeteliste {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  margin-top: 0px;
 }
 
-#planeteliste article{
-    width: 16.66%;
-    background-size: 100vw 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 82vh;
-    transition: width 0.5s;
+#planeteliste article {
+  flex: 1;
+  background-size: 100vw 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 82vh;
+  transition: flex 1s;
 }
 
-#planeteliste article:active{
-    transform: scale(0.98);
+#planeteliste article:active {
+  transform: scale(0.98);
 }
 
-#planeteliste article:hover{
-    width: 100%;
-    transition: width 0.5s;
-    order: -1;
+#planeteliste article:hover {
+  flex: 15;
+  filter: blur(0px);
 }
 
-#planeteliste h1{
-    margin-bottom: 6%;
+#planeteliste h1 {
+  display: none;
+  margin-bottom: 6%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+#planeteliste article:hover h1 {
+  display: block;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+#planeteliste p {
+    display: none;
     opacity: 0;
     transition: opacity 0.3s;
+    margin-right: 20%;
+    margin-left: 20%;
 }
 
-#planeteliste article:hover h1{
+#planeteliste article:hover p {
+    display: block;
     opacity: 1;
     transition: opacity 0.3s;
-}
+  }
+
 
 #planeteListeMagaclite{
     background-image: url("images/planetesIllu/Magaclite.jpg");
