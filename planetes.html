@@ -12,37 +12,64 @@
     <link rel="shortcut icon" href="StarLightLogo.png" type="image/x-icon">
 </head>
 <body>
-    <header>
+    <header id="top">
         <div>
             <img src="StarLightLogo.png" alt="" height="120px" onclick="location.href='index.html'"> 
             <p onclick="location.href='index.html'">StarLight </p>
         </div>
     </header>
     <section id="planeteliste">
-        <article id="planeteListeMagaclite">
+        <article id="planeteListeMagaclite" onclick="location.href='magaclite.html'">
+          <div class="content">
             <h1>Magaclite</h1>
             <p>L'Utopie planétaire.</p>
+          </div>
         </article>
         <article id="planeteListeTelesto">
+          <div class="content">
             <h1>Telesto</h1>
             <p>Joyau de vie et d'énergie.</p>
+          </div>
         </article>
         <article id="planeteListeSutur">
+          <div class="content">
             <h1>Sutur</h1>
-            <p>Planète au milles périls.</p>    
+            <p>Planète au milles périls.</p>
+          </div>
         </article>
         <article id="planeteListeNaiade">
-            <h1>Naïade</h1>  
-            <p>Naïade n'est plus que l'ombre du joyau qu'elle fût jadis.</p>     
+          <div class="content">
+            <h1>Naïade</h1>
+            <p>Naïade n'est plus que <br> l'ombre du joyau qu'elle fût jadis.</p>
+          </div>
         </article>
         <article id="planeteListeHiemus">
-            <h1>Hiemus</h1> 
-            <p>Technologie et magie, deux mondes opposés qui cohabitent.</p>     
+          <div class="content">
+            <h1>Hiemus</h1>
+            <p>Technologie et magie, <br> deux mondes opposés qui cohabitent.</p>
+          </div>
         </article>
         <article id="planeteListeEsprah">
-            <h1>Esprah</h1>   
+          <div class="content">
+            <h1>Esprah</h1>
             <p>Foyer Glacial.</p>
+          </div>
         </article>
-    </section>
+      </section>
+      <footer>
+        <p>Site fait avec ❤ par <a href="https://cc-c-t-o.000webhostapp.com">Théo</a><br>Idée par Théo, Onyx, Santeripe, Daku et Close</p>
+        <a id="retourEnHaut"><img src="StarLightLogo.png" alt="" height="120px" title="Retourner en haut de la page"> </a> 
+        <p>© 2019 tous droits réservés.</p>
+    </footer>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function (){
+            $("#retourEnHaut").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#top").offset().top
+                }, 500);
+            });
+        });
+    </script>
 </html>

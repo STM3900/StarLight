@@ -179,63 +179,64 @@ header div{
 /* /////////MENU PLANETES///////// */
 
 #planeteliste {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  align-content: center;
-  margin-top: 0px;
-}
-
-#planeteliste article {
-  flex: 1;
-  background-size: 100vw 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 82vh;
-  transition: flex 1s;
-}
-
-#planeteliste article:active {
-  transform: scale(0.98);
-}
-
-#planeteliste article:hover {
-  flex: 15;
-  filter: blur(0px);
-}
-
-#planeteliste h1 {
-  display: none;
-  margin-bottom: 6%;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-#planeteliste article:hover h1 {
-  display: block;
-  opacity: 1;
-  transition: opacity 0.3s;
-}
-
-#planeteliste p {
-    display: none;
-    opacity: 0;
-    transition: opacity 0.3s;
-    margin-right: 20%;
-    margin-left: 20%;
-}
-
-#planeteliste article:hover p {
-    display: block;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    margin-top: 0px;
+  }
+  
+  #planeteliste article {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 100vw 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 82vh;
+    filter: blur(2px);
+    transition: flex 1s, opacity 0.7s, filter 0.7s;
+    overflow: hidden;
+    opacity: 0.5;
+  }
+  
+  #planeteliste article:active {
+    transform: scale(0.98);
+  }
+  
+  #planeteliste article:hover {
+    flex: 15;
     opacity: 1;
-    transition: opacity 0.3s;
+    filter: blur(0px);
+    cursor: pointer;
+  }
+  
+  #planeteliste article .content {
+    text-align: center;
+    margin-bottom: 7%;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  
+  #planeteliste article:hover .content {
+    opacity: 1;
+    transition: opacity 0.5s;
   }
 
+  #planeteliste article h1{
+    font-size: 70px;
+}
+
+  #planeteliste article p{
+      font-size: 30px;
+  }
 
 #planeteListeMagaclite{
-    background-image: url("images/planetesIllu/Magaclite.jpg");
+    background-image: url("images/planetesIllu/magaclite.jpg");
 }
 
 #planeteListeTelesto{
@@ -529,6 +530,63 @@ footer img:hover{
         filter: blur(0px);
         background-size: 100vw 50vh;
     } 
+
+    #planeteliste {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        margin-top: 0px;
+      }
+      
+      #planeteliste article {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: 100vw 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 41vh;
+        width: 100%;
+        filter: blur(0px);
+        transition: none;
+        overflow: hidden;
+        opacity: 1;
+      }
+      
+      #planeteliste article:active {
+        transform: scale(0.98);
+      }
+      
+      #planeteliste article:hover {
+        flex: 1;
+        opacity: 1;
+        filter: blur(0px);
+        cursor: pointer;
+      }
+      
+      #planeteliste article .content {
+        text-align: center;
+        margin-bottom: 7%;
+        opacity: 1;
+        transition: none;
+      }
+      
+      #planeteliste article:hover .content {
+        opacity: 1;
+        transition: none;
+      }
+    
+      #planeteliste article h1{
+        font-size: 8vw;
+    }
+    
+      #planeteliste article p{
+          font-size: 3vw;
+      }
     
     .cadreplanete{
         height: 100%;
@@ -629,7 +687,25 @@ footer img:hover{
 
     #menu h1{
         margin-bottom: 10%;
+        font-size: 7vw;
     }
+
+    #planeteliste article {
+        background-size: 100vw 50vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 28vh;
+      }
+
+      #planeteliste article h1{
+        font-size: 7vw;
+        margin-bottom: 5%;
+    }
+    
+      #planeteliste article p{
+          font-size: 2.5vw;
+          margin-top: 0px;
+      }
     
     .cadreplanete{
         height: 110%;
