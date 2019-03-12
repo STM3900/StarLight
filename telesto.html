@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>StarLight | Telesto</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link href="https://www.1001fonts.com/sf-distant-galaxy-font.html" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="shortcut icon" href="StarLightLogo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <header id="top">
+        <div>
+            <img src="StarLightLogo.png" alt="" height="120px" onclick="location.href='index.html'"> 
+            <p onclick="location.href='index.html'">StarLight</p>
+        </div>
+    </header>
+    <div class="cadreplanete">
+        <h1>Telesto</h1>
+        <p><b><i>Joyau de vie de d'energie</i></b></p>
+        <div class="icones">
+            <div>
+                <i class="material-icons" id="rouge">star</i>
+                <p>N'a pas accès à la Magie</p>
+            </div>
+            <div>
+               <a id="ficheDescription"><i class="material-icons" id="fleche">keyboard_arrow_down</i></a> 
+            </div>
+            <div>
+                <i class="material-icons">brightness_5</i>
+                <p>A accès à la technologie Spatiale</p>
+            </div>
+            <div>
+                <i class="material-icons" id="saumon">person_outline</i>
+                <p>Type de gouvernement : <br> Semi-Dictature</p>
+            </div>
+            <div>
+                <i class="material-icons">flash_on</i>
+                <p>Ère : Futuriste</p>
+            </div>
+            <div>
+                <i class="material-icons" id="vert">room</i>
+                <p>Situation géopolitique : <br> Très stable</p>
+            </div>
+        </div>
+    </div>
+    <div class="parallax" id="tele"></div>
+        <h1 id="fiche">Fiche récapitulative :</h1>
+        <img class="ficheplanete" src="images/fichemagaclite.jpg" alt="">
+        <h1>Description :</h1>
+        <p class="texteplanete">Telesto est une planète de petite taille, située dans le système de Magellan. C’est la planète voisine à Magaclite. Elle est recouverte d’une grande plaine entourée par une profonde forêt séparée par de nombreuses rivières traversant la planète de long en large. Au pôle, Nord se situe l’unique montagne de Telesto, le mont Fulgur. Une mystique montagne étant à la source du temps constamment orageux de la planète. Les légendes racontent qu’il y aurait à son sommet une source pure d'Énergie élémentaire de Foudre (EdF). <br><br>
+
+            Étant la planète la plus reculée de son système, son climat est assez froid, ayant des températures variant de 35°C à -65°C, elle abrite une faune ainsi qu’une flore extrêmement variée, mais une espèce particulière se démarque des autres : les Florides. Une espèce entre l’homme et la plante, d’un pacifisme hors pair. Malgré cela, cette espèce est réputée pour ses capacités à manipuler le bois, pouvant faire de magnifiques objet ainsi que d’intrépides armes. <br><br>
+            
+            Bien que cette espèce ne fasse de mal à personne, elle n’est pas à l'abri des autres espèces étant plutôt agressive, cherchant à se nourrir de leurs récoltes, et même dans les cas les plus extrêmes, de leurs chair boiseuse. <br><br>
+            
+            Le temps sur Telesto est majoritairement nuageux, les orages ainsi que de violentes tempêtes électriques sont choses courantes. Comme énoncé plus tôt, ses orages sont dues à cause du sommet du mont Fulgur, d’une hauteur de 1856 mètres celui-ci abrite une source pure d’un élément, en l’occurrence celui de Foudre. <br><br>
+            
+            D’après la section de surveillance de Karma l'énergie produite par cette source serait capable d'alimenter la totalité du réseau électrique de Magaclite pendant des centaines de milliers d'années. Cette mystérieuse source est au centre des études de la section R&D qui cherche un moyen de la récupérer puis de la stocker pour l’utiliser à des fins utilitaire ou militaire, comme par exemple arriver à stocker cette énergie dans une arme pour ensuite s’en servir comme munitions pour tirer à l’infini. <br><br>
+            
+            La source élémentaire du mont Fulgur n’en fait pas sa seule particularité. En effet, le mont Fulgur est aussi la source de toutes les rivières de Telesto qui se séparent aux 4 coins du globe, alimentant toute la végétation en eau pour finalement se retrouver au même endroit, dans la mer éternelle, situé à l’opposé du mont Fulgur, au centre du pôle Sud. <br><br>
+            
+            Cette paisible mer contient une eau pure, qui selon les croyances, aurait des effets rajeunissant sur la peau, la rendant douce comme de la soie. <br><br>
+            
+            Malgré tous ses spécification particulières, Telesto semble ne contenir aucune trace de magie, mais une trace bien présente d’EdF. <br><br>
+        </p>
+        <footer>
+                <p>Site fait avec ❤ par <a href="https://cc-c-t-o.000webhostapp.com">Théo</a><br>Idée par Théo, Onyx, Santeripe, Daku et Close</p>
+                <a id="retourEnHaut"><img src="StarLightLogo.png" alt="" height="120px" title="Retourner en haut de la page"> </a> 
+                <p>© 2019 tous droits réservés.</p>
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function (){
+                $("#retourEnHaut").click(function (){
+                    $('html, body').animate({
+                        scrollTop: $("#top").offset().top
+                    }, 2000);
+                });
+            });
+
+            $(document).ready(function (){
+                $("#ficheDescription").click(function (){
+                    $('html, body').animate({
+                        scrollTop: $("#fiche").offset().top
+                    }, 2000);
+                });
+            });
+        </script>
+</body>
+</html>

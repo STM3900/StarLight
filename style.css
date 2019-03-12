@@ -233,6 +233,7 @@ header div{
 
   #planeteliste article p{
       font-size: 30px;
+      line-height: 1.6;
   }
 
 #planeteListeMagaclite{
@@ -344,8 +345,17 @@ header div{
     cursor: pointer;
 }
 
-/* ////////////////// */
+/* /////////ARIRERE PLAN DE PLANETE///////// */
 
+#maga{
+    background-image: url("images/planetesimage/Magaclite.jpg");
+}
+
+#tele{
+    background-image: url("images/planetesimage/Telesto.jpg");
+}
+
+/* ////////////////// */
 .ficheplanete{
     display: flex;
     margin-right: auto;
@@ -420,7 +430,7 @@ footer img:hover{
 
 .parallax {
     /* The image used */
-    background-image: url("images/Magaclite.jpg");
+ 
   
     /* Set a specific height */
     height: 100vh;
