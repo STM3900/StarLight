@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>StarLight | Esprah</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link href="https://www.1001fonts.com/sf-distant-galaxy-font.html" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="shortcut icon" href="StarLightLogo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <header id="top">
+        <div>
+            <img src="StarLightLogo.png" alt="" height="120px" onclick="location.href='index.html'"> 
+            <p onclick="location.href='index.html'">StarLight</p>
+        </div>
+    </header>
+    <div class="cadreplanete">
+        <h1>Esprah</h1>
+        <p><b><i>Foyer glacial, théatre d'une guerre élémentaire.</i></b></p>
+        <div class="icones">
+            <div>
+                <i class="material-icons">star</i>
+                <p>A accès à la Magie</p>
+            </div>
+            <div>
+               <a id="ficheDescription"><i class="material-icons" id="fleche">keyboard_arrow_down</i></a> 
+            </div>
+            <div>
+                <i class="material-icons" id="rouge">brightness_5</i>
+                <p>N'a pas accès à la technologie Spatiale</p>
+            </div>
+            <div>
+                <i class="material-icons" id="gris">person_outline</i>
+                <p>Type de gouvernement : <br> Aucun</p>
+            </div>
+            <div>
+                <i class="material-icons">flare</i>
+                <p>Ère : Magique</p>
+            </div>
+            <div>
+                <i class="material-icons" id="rouge">room</i>
+                <p>Situation géopolitique : <br> Guerre mondiale</p>
+            </div>
+        </div>
+    </div>
+    <div class="parallax" id="espr"></div>
+        <h1 id="fiche">Fiche récapitulative :</h1>
+        <img class="ficheplanete" src="images/fichesplanetes/ficheEsprah.png" alt="">
+        <h1>Description :</h1>
+        <p class="texteplanete">Esprah est une minuscule planète située en marge du système d’Oprium M21. <br><br>
+            Auparavant comparable à Telesto, cette planète était recouverte d’une vaste forêt, où la vie prospérait paisiblement à l'exception des pôles de la planète qui étaient le foyer de deux sources Élémentaires pures : Celle du feu et de la glace. <br><br>
+            Mais contrairement à Telesto, Esprah possédait un noyau magique instable qui renfermait une grande quantité d’énergie. <br><br>
+            Mais un jour, suite à un violent choc d’un objet stellaire, cette énergie qui c’était accumulé dans le noyau magique se libéra aux pôles de celle-ci, stoppant net sa rotation. Deux gigantesques éruptions, l’une volcanique et l’autre glaciaire eu lieu respectivement au Pôle Sud et au Pôle Nord, ravageant absolument toute la faune et la flore exceptée à l’équateur, la seule zone épargnée par ce cataclysme. <br><br>
+            L’éruption libéra en plus du magma et de la glace, une quantité incroyable de magie, permettant de créer une nouvelle forme de vie insolite : Les Élémentaires. Actuellement les seules formes de vie d’Esprah, ce sont des êtres ressemblants plus ou moins à un vertébré bipède similaire aux humains. Dotés d’une intelligence similaire, ils sont néanmoins pourvus de capacités magiques, variant selon leur Élément. <br><br>
+            Incapable de survivre dans un environnement opposé à celui de son Élément, les Aguahs et les Fyahs, se livrent une guerre incessante pour conquérir non seulement l’unique territoire de verdure restant à l’équateur du globe, mais aussi le territoire adverse en déferlant leurs magies pour repousser leurs némésis. <br><br>
+            Certains Élémentaires refusent de combattre et ce résilient à vivre dans leurs terres reculés, loin du combat. Ils passent leurs vies principalement à aider et à équiper leurs semblables pour le combat. <br><br>
+            L’exploration d’Esprah reste très laborieuse à cause de ces climats extrêmes et de la guerre sans fin, des recherches sont encore à faire. <br><br>
+        </p>
+        <footer>
+                <p>Site fait avec ❤ par <a href="https://cc-c-t-o.000webhostapp.com">Théo</a><br>Idée par Théo, Onyx, Santeripe, Daku et Close</p>
+                <a id="retourEnHaut"><img src="StarLightLogo.png" alt="" height="120px" title="Retourner en haut de la page"> </a> 
+                <p>© 2019 tous droits réservés.</p>
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function (){
+                $("#retourEnHaut").click(function (){
+                    $('html, body').animate({
+                        scrollTop: $("#top").offset().top
+                    }, 2000);
+                });
+            });
+
+            $(document).ready(function (){
+                $("#ficheDescription").click(function (){
+                    $('html, body').animate({
+                        scrollTop: $("#fiche").offset().top
+                    }, 2000);
+                });
+            });
+        </script>
+</body>
+</html>
