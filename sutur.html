@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>StarLight | Sutur</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link href="https://www.1001fonts.com/sf-distant-galaxy-font.html" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="shortcut icon" href="StarLightLogo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <header id="top">
+        <div>
+            <img src="StarLightLogo.png" alt="" height="120px" onclick="location.href='index.html'"> 
+            <p onclick="location.href='index.html'">StarLight</p>
+        </div>
+    </header>
+    <div class="cadreplanete">
+        <h1>Sutur</h1>
+        <p><b><i>Planète aux milles périls</i></b></p>
+        <div class="icones">
+            <div>
+                <i class="material-icons" id="rouge">star</i>
+                <p>N'a pas accès à la Magie</p>
+            </div>
+            <div>
+               <a id="ficheDescription"><i class="material-icons" id="fleche">keyboard_arrow_down</i></a> 
+            </div>
+            <div>
+                <i class="material-icons" id="rouge">brightness_5</i>
+                <p>N'a pas accès à la technologie Spatiale</p>
+            </div>
+            <div>
+                <i class="material-icons" id="gris">person_outline</i>
+                <p>Type de gouvernement : <br> Aucun</p>
+            </div>
+            <div>
+                <i class="material-icons">bug_report</i>
+                <p>Ère : Crétacé</p>
+            </div>
+            <div>
+                <i class="material-icons" id="gris">room</i>
+                <p>Situation géopolitique : <br> N/A</p>
+            </div>
+        </div>
+    </div>
+    <div class="parallax" id="sutu"></div>
+        <h1 id="fiche">Fiche récapitulative :</h1>
+        <img class="ficheplanete" src="images/fichesplanetes/ficheSutur.png" alt="">
+        <h1>Description :</h1>
+        <p class="texteplanete">
+            Sutur est une planète de grande taille située au même titre que Magaclite et Télesto dans le système de Magellan. <br><br>
+            C’est d’ailleurs la planète la plus proche de son étoile. Comparable à un immense rocher, son climat est extrêmement aride. Possédant un environnement similaire à un immense désert rocailleux et sec dont les températures peuvent atteindre les 90 degrés Celsius. <br><br>
+            Avec de telles températures, il est impossible de trouver de l’eau à moins de 50 mètres de profondeur, rendant la vie à la surface quasiment impossible pour un être normal. <br><br>
+            Malgré ces contraintes, des intrépides formes de vie se sont développé, utilisant pour la plupart d’entre elle, la chaleur du sable comme source d'énergie. <br><br>
+            Ce sont des créatures vicieuses qui se tapisse dans le sable, attendant patiemment une proie malavisé. Pour la dévorer en une seule bouchée. <br><br>
+            A cause de leur agressivité hors normes, l’exploration de Sutur reste extrêmement périlleuse. <br><br>
+            Hormis cela, le désert de roche de la planète n’est en fait que sa face “visible”. <br><br>
+            En effet, le sous sol de Sutur abrite un gigantesque labyrinthe de grottes plus ou moins grandes dans lesquelles regorge non seulement une multitude de minerais tous plus rares les uns des autres, mais aussi de l’eau extrêmement minéralisé à cause de son passage dans les immenses cavités de ces précieuses roches. <br><br>
+            Mais tout comme à la surface les souterrains ne sont pas sans dangers. Bien au contraire. Des formes de vie encore plus développé que celles présentent en surface rodent dans les grottes et dans les parois de celles-ci, guettant le moindre visiteur imprudent. <br><br>
+            Mais malgré ses mille périls, il semblerait qu’une autre forme de vie, plus développé arrive à survivre sur le sol de Sutur, menant une activité douteuse… <br><br>
+        </p>
+        <footer>
+                <p>Site fait avec ❤ par <a href="https://cc-c-t-o.000webhostapp.com">Théo</a><br>Idée par Théo, Onyx, Santeripe, Daku et Close</p>
+                <a id="retourEnHaut"><img src="StarLightLogo.png" alt="" height="120px" title="Retourner en haut de la page"> </a> 
+                <p>© 2019 tous droits réservés.</p>
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function (){
+                $("#retourEnHaut").click(function (){
+                    $('html, body').animate({
+                        scrollTop: $("#top").offset().top
+                    }, 2000);
+                });
+            });
+
+            $(document).ready(function (){
+                $("#ficheDescription").click(function (){
+                    $('html, body').animate({
+                        scrollTop: $("#fiche").offset().top
+                    }, 2000);
+                });
+            });
+        </script>
+</body>
+</html>

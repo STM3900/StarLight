@@ -201,7 +201,7 @@ header div{
     filter: blur(2px);
     transition: flex 1s, opacity 0.7s, filter 0.7s;
     overflow: hidden;
-    opacity: 0.5;
+    opacity: 0.9;
   }
   
   #planeteliste article:active {
@@ -333,6 +333,14 @@ header div{
     color: #cc9cc5;
 }
 
+#gris{
+    color: #414141;
+}
+
+#cyan{
+    color: #73b8e5;
+}
+
 /* ////////////////// */
 
 #fleche{
@@ -353,6 +361,18 @@ header div{
 
 #tele{
     background-image: url("images/planetesimage/Telesto.jpg");
+}
+
+#sutu{
+    background-image: url("images/planetesimage/Sutur.jpg");
+}
+
+#naia{
+    background-image: url("images/planetesimage/Naiade.jpg");
+}
+
+#hiem{
+    background-image: url("images/planetesimage/Hiemus.jpg");
 }
 
 /* ////////////////// */
