@@ -520,6 +520,10 @@ footer img:hover{
 
   @media screen and (max-width: 1000px) {
 
+    section p{
+        letter-spacing: 7px;
+    }
+
     #titre{
         margin-bottom: 5%;
     }
@@ -709,7 +713,9 @@ footer img:hover{
 
   @media screen and (max-width: 800px) {
 
-    
+    section p{
+        letter-spacing: 5px;
+    }
 
     #titre{
         margin-bottom: 7%;
