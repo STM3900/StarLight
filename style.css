@@ -67,6 +67,119 @@ section p{
     font-family: 'Orbitron', sans-serif;
 }
 
+.wrapper {
+    width: 100%;
+    height: 75vh;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .left,
+  .right {
+    width: 55%;
+    height: 100%;
+    top: 0;
+    transform: skewX(-15deg);
+    overflow: hidden;
+  }
+  
+  .left {
+    position: relative;
+    left: -5%;
+    margin-top: 0px;
+  }
+  
+  .right {
+    position: absolute;
+    right: -5%;
+    margin-top: 0px;
+  }
+  
+  .left .inner,
+  .right .inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: skewX(15deg);
+  }
+  
+  .left .inner {
+    background-image: url("images/menu/plaineespace.png");
+    margin-left: 9%;
+    text-align: left;
+  
+    filter: brightness(0.5);
+    background-size: cover;
+    transition: 0.4s;
+  }
+  
+  .right .inner {
+    background-image: url("images/menu/magaclite.jpg");
+    margin-left: -9%;
+    text-align: right;
+  
+    filter: brightness(0.5);
+    background-size: cover;
+    transition: 0.4s;
+  }
+  
+  .inner {
+    position: relative;
+  }
+  
+  .inner .text-wrapper {
+    position: absolute;
+  }
+  
+  .left .text-wrapper {
+    top: 15px;
+    left: 15px;
+  }
+  .right .text-wrapper {
+    bottom: 15px;
+    right: 15px;
+  }
+  
+  .left .inner:hover {
+    filter: brightness(1);
+    background-position: 4% 0%;
+    cursor: pointer;
+  }
+  
+  .right .inner:hover {
+    filter: brightness(1);
+    background-position: -4% 0%;
+    cursor: pointer;
+  }
+  
+  .inner h1 {
+    margin-top: 0px;
+  }
+  
+  .left h1 {
+    text-align: left;
+  
+  }
+  
+  .left p {
+    margin-top: -45px;
+  }
+  
+  .right h1 {
+    text-align: right;
+  
+  }
+  
+  .right p {
+      margin-top: -45px;
+  }
+  
+
+
+
+
 header{
     border-top: 1px solid white;
     border-bottom: 1px solid white;
@@ -740,6 +853,93 @@ footer img:hover{
     footer p{
         margin-bottom: 0px;
     }
+
+    .wrapper {
+        width: 100%;
+        height: 75vh;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .left,
+      .right {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        transform: skewX( 0deg);
+      }
+      
+      .left {
+        position: relative;
+        left: 0%;
+        margin-top: 0px;
+      }
+      
+      .right {
+        position: relative;
+        right: 0%;
+        margin-top: 0px;
+      }
+      
+      .left .inner,
+      .right .inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transform: skewX(0deg);
+      }
+      
+      .left .inner {
+        background-image: url("images/menu/plaineespace.png");
+        margin-left: 0%;
+        text-align: left;
+      
+        filter: brightness(0.5);
+        background-size: cover;
+        transition: 0.4s;
+      }
+      
+      .right .inner {
+        margin-left: 0%;
+      }
+      
+      .inner {
+        position: relative;
+      }
+      
+      .inner .text-wrapper {
+        position: absolute;
+      }
+      
+      .left .text-wrapper {
+        top: 15px;
+        left: 15px;
+      }
+      .right .text-wrapper {
+        bottom: 15px;
+        right: 15px;
+      }
+      
+      .inner h1 {
+        margin-top: 0px;
+      }
+      
+      .left h1 {
+        text-align: left;
+      }
+      
+      .left p {
+        margin-top: -7%;
+      }
+      
+      
+      .right p {
+        margin-top: -7%;
+      }
   }
 
   @media screen and (max-width: 800px) {

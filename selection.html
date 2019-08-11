@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>StarLight | Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link href="https://www.1001fonts.com/sf-distant-galaxy-font.html" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="shortcut icon" href="StarLightLogo.png" type="image/x-icon">
+</head>
+<body>
+    <header id="top">
+        <div>
+            <img src="StarLightLogo.png" alt="" height="120px" onclick="location.href='index.html'"> 
+            <p onclick="location.href='index.html'">StarLight </p>
+        </div>
+    </header>
+    <div class="wrapper">
+        <section class="left">
+          <article class="inner">
+            <div class="text-wrapper">
+              <h1>Lire</h1>
+              <p>Plongez au cœur de StarLight.</p>
+            </div>
+          </article>
+        </section>
+        <section class="right" onclick="location.href='menu.html'">
+          <article class="inner">
+            <div class="text-wrapper">
+              <h1>Background</h1>
+              <p>Description de l'univers.</p>
+            </div>
+          </article>
+        </section>
+      </div>
+    <footer>
+        <p>Site fait avec ❤ par <a href="http://www.theomigeat.com">Théo</a><br>Idée par Théo, Onyx, Santeripe, Daku et Close</p>
+        <a id="retourEnHaut"><img src="StarLightLogo.png" alt="" height="120px" title="Retourner en haut de la page"> </a> 
+        <p>© 2019 tous droits réservés.</p>
+    </footer>
+</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+            <script>
+                $(document).ready(function (){
+                    $("#retourEnHaut").click(function (){
+                        $('html, body').animate({
+                            scrollTop: $("#top").offset().top
+                        }, 500);
+                    });
+                });
+    </script>
+    <script src="musique.js"></script>
+</html>
