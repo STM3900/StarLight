@@ -110,7 +110,7 @@ section p{
     margin-left: 9%;
     text-align: left;
   
-    filter: brightness(0.5);
+    filter: brightness(0.5) grayscale(100%);
     background-size: cover;
     transition: 0.4s;
   }
@@ -143,7 +143,7 @@ section p{
   }
   
   .left .inner:hover {
-    filter: brightness(1);
+    filter: brightness(1) grayscale(100%);
     background-position: 4% 0%;
     cursor: pointer;
   }
@@ -274,7 +274,7 @@ header div{
     background-size: 100vw 100vh;
     background-position: center;
     background-repeat: no-repeat;
-    filter: blur(3px);
+    filter: blur(3px) grayscale(100%);
     transition: filter 0.2s;
 }
 
@@ -283,7 +283,7 @@ header div{
     background-size: 100vw 100vh;
     background-position: center;
     background-repeat: no-repeat;
-    filter: blur(3px);
+    filter: blur(3px) grayscale(100%);
     transition: filter 0.2s;
 }
 
@@ -292,7 +292,7 @@ header div{
     background-size: 100vw 100vh;
     background-position: center;
     background-repeat: no-repeat;
-    filter: blur(3px);
+    filter: blur(3px) grayscale(100%);
     transition: filter 0.2s;
 }   
 
@@ -303,19 +303,19 @@ header div{
 }
 
 #menuelement2:hover{
-    filter: blur(0px);
+    filter: blur(0px) grayscale(100%);
     transition: filter 0.3s;
     cursor: pointer;
 }
 
 #menuelement3:hover{
-    filter: blur(0px);
+    filter: blur(0px) grayscale(100%);
     transition: filter 0.3s;
     cursor: pointer;
 }
 
 #menuelement4:hover{
-    filter: blur(0px);
+    filter: blur(0px) grayscale(100%);
     transition: filter 0.3s;
     cursor: pointer;
 }
@@ -699,17 +699,17 @@ footer img:hover{
     }
     
     #menuelement2{
-        filter: blur(0px);
+        filter: blur(0px) grayscale(100%);
         background-size: 100vw 50vh;
     }
     
     #menuelement3{
-        filter: blur(0px);
+        filter: blur(0px) grayscale(100%);
         background-size: 100vw 50vh;
     }
     
     #menuelement4{
-        filter: blur(0px);
+        filter: blur(0px) grayscale(100%);
         background-size: 100vw 50vh;
     } 
 
@@ -891,6 +891,7 @@ footer img:hover{
         background-size: cover;
         background-repeat: no-repeat;
         transform: skewX(0deg);
+        filter: brightness(1);
       }
       
       .left .inner {
@@ -898,7 +899,7 @@ footer img:hover{
         margin-left: 0%;
         text-align: left;
       
-        filter: brightness(0.5);
+        filter: brightness(1);
         background-size: cover;
         transition: 0.4s;
       }
